@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHATSAPP NUMBER BAN TOOL - STIVO DEVX HAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">WHATSAPP BAN TOOL</h1>
+            <p class="subtitle">STIVO DEVX HAT OFFICIAL TOOL</p>
+        </div>
+
+        <!-- Initial State - Channel Follow -->
+        <div class="follow-state" id="followState">
+            <div class="follow-message">
+                <div class="follow-text">
+                    YOU NEED TO FOLLOW CYBER ZONE PRO TECH RÉSEAU HAT<br>
+                    OFFICIAL CHANNEL ON WHATSAPP
+                </div>
+                <a href="https://whatsapp.com/channel/0029Vb6nKuV8vd1M1iBlWe2l" 
+                   class="follow-button" 
+                   target="_blank" 
+                   onclick="handleChannelFollow()">
+                    FOLLOW CHANNEL
+                </a>
+            </div>
+            <div class="success-message" id="successMessage">
+                ✓ CHANNEL FOLLOWED! REDIRECTING TO TOOL...
+            </div>
+            <button class="back-button" onclick="showTool()" style="display: none;" id="continueButton">
+                CONTINUE TO TOOL 
+            </button>
+        </div>
+
+        <!-- Tool State -->
+        <div class="tool-state" id="toolState">
+            <div class="section">
+                <h2 class="section-title">SELECT BAN SCRIPT</h2>
+                <div class="script-grid">
+                    <div class="script-option" onclick="selectScript('script1', 'https://www.mediafire.com/file/xq44xc72j2nedjq/BAN_SCRIPT_1.txt/file')">
+                        <div class="script-name">SCRIPT 1</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                    <div class="script-option" onclick="selectScript('script2', 'https://www.mediafire.com/file/b0q0uo5xn9cs2vg/BAN_SCRIPT_2.txt/file')">
+                        <div class="script-name">SCRIPT 2</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                    <div class="script-option" onclick="selectScript('script3', 'https://www.mediafire.com/file/bslleekddasw9y7/3.txt/file')">
+                        <div class="script-name">SCRIPT 3</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                    <div class="script-option" onclick="selectScript('script4', 'https://www.mediafire.com/file/s6ci708msc1s9wi/4.txt/file')">
+                        <div class="script-name">SCRIPT 4</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                    <div class="script-option" onclick="selectScript('script5', 'https://www.mediafire.com/file/29xu0ee3bhcx91b/5.txt/file')">
+                        <div class="script-name">SCRIPT 5</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                    <div class="script-option" onclick="selectScript('script6', 'https://www.mediafire.com/file/motac0bhhjg9iho/SCRIPT_6.txt/file')">
+                        <div class="script-name">SCRIPT 6</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                    <div class="script-option" onclick="selectScript('banDP', 'https://www.mediafire.com/file/28he8wd40omlm1n/WHATSAPP_BAN_DP.7z/file')">
+                        <div class="script-name">BAN DP</div>
+                        <div class="script-status">AVAILABLE</div>
+                    </div>
+                </div>
+                <button class="download-button" id="downloadButton" onclick="downloadScript()">
+                    DOWNLOAD NOW
+                </button>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">OTHER DOWNLOADS</h2>
+                <div class="other-downloads">
+                    <div class="download-card">
+                        <div class="download-card-title">💬 FAKE CHAT WHATSAPP</div>
+                        <a href="https://www.mediafire.com/file/2ysgd12b6g5b379/GB_WHATSAPP_FAKE_CHAT_2.25.16.82.7z/file" 
+                           class="download-card-button whatsapp" 
+                           target="_blank">
+                            DOWNLOAD FAKE CHAT WHATSAPP 
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="download-card-title">🎥 How To Ban Number</div>
+                        <a href="https://youtube.com/shorts/DdwlHNVzeKk?feature=share" 
+                           class="download-card-button youtube" 
+                           target="_blank">
+                            HOW TO BAN NUMBER VIDEO HERE 
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="back-button" onclick="showFollow()">← BACK TO CHANNEL FOLLOW</button>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">DEVELOP BY STIVO DEVX</div>
+            <a href="https://whatsapp.com/channel/0029Vb6nKuV8vd1M1iBlWe2l" 
+               class="footer-link" 
+               target="_blank">
+                FOLLOW ON WHATSAPP 
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
